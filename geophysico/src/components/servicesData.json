@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Seismic Reflection",
+        "acquisition": "Onsite",
+        "processing": "Remote",
+        "interpretation": "Remote",
+        "experience": "10"
+    },
+    {
+        "name": "Sub-bottom Profiler",
+        "acquisition": "Onsite",
+        "processing": "Remote",
+        "interpretation": "Remote",
+        "experience": "7"
+    },
+    {
+        "name": "Magnetics",
+        "acquisition": "Onsite",
+        "processing": "Remote",
+        "interpretation": "Remote",
+        "experience": "8"
+    },
+    {
+        "name": "Seismic Refraction",
+        "acquisition": "Onsite",
+        "processing": "Remote",
+        "interpretation": "Remote",
+        "experience": "5"
+    },
+    {
+        "name": "MASW",
+        "acquisition": "Onsite",
+        "processing": "Remote",
+        "interpretation": "Remote",
+        "experience": "5"
+    },
+    {
+        "name": "Ground Penetrating Radar",
+        "acquisition": "Onsite",
+        "processing": "Remote",
+        "interpretation": "Remote",
+        "experience": "9"
+    },
+    {
+        "name": "Electrical Resistivity",
+        "acquisition": "Onsite",
+        "processing": "Remote",
+        "interpretation": "Remote",
+        "experience": "11"
+    }
+]
