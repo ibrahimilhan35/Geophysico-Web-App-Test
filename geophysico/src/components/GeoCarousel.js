@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactForm from "./ContactForm"; // Adjust the import path based on your project structure
+import ContactForm from "./ContactForm"; 
 import CountdownTimer from "./CountdownTimer"
 
 function GeoCarousel() {
