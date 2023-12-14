@@ -1,0 +1,20 @@
+[
+  {
+    "title": "ALL ABOUT YOU",
+    "content": "We offer a multidisciplinary understanding and plan for achieving your goals. We are prepared to work with you at any level, from assisting with project proposals to managing the full project completion process. Our data gathering, processing, and interpretation services, or independent, unbiased advice, will help you find solutions to real-world problems.",
+    "image": "/images/Me1-300x300.jpg",
+    "alignment": "left"
+  },
+  {
+    "title": "THE TECHNICAL STUFF",
+    "content": "Whether you're just putting together a proposal, performing fieldwork, or doing data analysis, we've got you covered. 'Analyze, Identify, Advise, and Execute' is our motto. Creating relationships rather than doing business is our main objective. We guarantee to be available to you whenever queries or problems arise.",
+    "image": "/images/OurExp2-300x300.jpg",
+    "alignment": "right"
+  },
+  {
+    "title": "OUR EXPERTISE",
+    "content": "We are a group of geophysicists, geologists, surveyors, data scientists, and strategists that like sharing their expertise with others to address real-world problems. Our experience demonstrates that productive collaboration and transparent communication will improve your bottom line.",
+    "image": "/images/OurExp1-300x300.jpg",
+    "alignment": "left"
+  }
+]

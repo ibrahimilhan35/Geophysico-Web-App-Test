@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
-import servicesData from './servicesData.json';
-import RenderServices from './RenderServices';
-import FilterButtons from './FilterButtons';
-import SortButtons from './SortButtons'; 
+import React, { useState } from "react";
+import servicesData from "../common/constants/servicesData.json";
+import RenderServices from "./RenderServices";
+import FilterButtons from "../common/Buttons/FilterButtons";
+import SortButtons from "../common/Buttons//SortButtons"; 
+import AddServiceButton from "../common/Buttons/AddServiceButton";
+import AddServiceForm from "./AddServiceForm";
+
 
 const Services = () => {
-  const [allServices] = useState(servicesData);
+  const [allServices, setAllServices] = useState(servicesData);
   const [filteredServices, setFilteredServices] = useState(allServices);
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
   const filterServices = (name) => {
     const filteredServices = allServices.filter(
@@ -17,7 +21,7 @@ const Services = () => {
 
   const sortServices = (property) => {
     const sortedServices = [...allServices].sort((a, b) => {
-      if (property === 'experience') {
+      if (property === "experience") {
         return parseInt(a[property]) - parseInt(b[property]);
       }
       // For sorting by name
@@ -25,6 +29,24 @@ const Services = () => {
     });
 
     setFilteredServices(sortedServices);
+  };
+
+  const handleShowForm = () => {
+    console.log("handleShowForm called");
+    setIsFormVisible(true);
+  };
+
+  const handleHideForm = () => {
+    setIsFormVisible(false);
+  };
+
+  const handleSaveService = (newService) => {
+    // Add new service to the list
+    setAllServices((prevServices) => [...prevServices, newService]);
+    // Optionally, you can update the filtered services as well
+    setFilteredServices((prevServices) => [...prevServices, newService]);
+    // Hide the form
+    handleHideForm();
   };
 
   return (
@@ -40,23 +62,49 @@ const Services = () => {
         {/* Filter buttons Container */}
         <div className="row">
           <div className="col-lg-12 text-center">
-            <FilterButtons onFilterClick={filterServices} />
+            <FilterButtons 
+              onFilterClick={filterServices} 
+              />
           </div>
         </div>
 
         {/* Sort buttons Container */}
         <div className="row">
           <div className="col-lg-12 text-center">
-            <SortButtons onSortClick={sortServices} />
+            <SortButtons 
+              onSortClick={sortServices} 
+            />
           </div>
         </div>
 
-        {/* Services Container */}
+        {/* Add a service Container */}
         <div className="row">
-          <RenderServices servicesArray={filteredServices} />
+          <div className="col-lg-12 text-center">
+            <AddServiceButton 
+              onAddServiceClick={handleShowForm}
+              />
+          </div>
         </div>
-
       </section>
+
+      {/* Form Container */}
+      <div>
+        {isFormVisible && (
+        <AddServiceForm 
+          isVisible={isFormVisible} 
+          onSave={handleSaveService}
+          onCancel={handleHideForm} 
+          />
+        )}
+      </div>
+
+      {/* Services Container */}
+      <div>
+        <RenderServices 
+          servicesArray={filteredServices} 
+          updateServicesArray={setFilteredServices} 
+          />
+      </div>
     </div>
   );
 };

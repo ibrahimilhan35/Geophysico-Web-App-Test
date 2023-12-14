@@ -1,4 +1,3 @@
-
 const FilterButtons = ({ onFilterClick }) => {
   return (
     <div className="buttons">
