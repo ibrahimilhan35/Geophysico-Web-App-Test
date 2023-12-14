@@ -1,0 +1,20 @@
+[
+  {
+    "title": "WHY US?",
+    "content": "Geo experts are indispensable, and we carefully select our clients to provide personalized focus and guidance. Whether you're looking for a strategic alliance, specific skill sets, or tools, give us a call. Together, we'll craft and refine your success strategy. Just as we didn't achieve success alone, neither will you.",
+    "image": "/images/PhD2-300x300.jpg",
+    "alignment": "right"
+  },
+  {
+    "title": "OUR APPROACH",
+    "content": "We offer a suite of top-notch geophysical services to expedite your project's efficient completion. Our services include a thorough consultation to identify gaps and opportunities, a detailed report with a project plan, timelines, milestones, cost analysis, and a schedule. This is how we ensure your success.",
+    "image": "/images/Field1-300x300.jpg",
+    "alignment": "left"
+  },
+  {
+    "title": "OUR BUSINESS",
+    "content": "After 15 years in multidisciplinary, data-driven, and integrated geoscience, we've embarked on a new journey. Now, we share our passion by giving back. Our ramp-up plan aims to empower your team, providing the tools needed for productivity. Contact us now to explore how we can help you expand, reduce turnover, and set a clear path to success and profit.",
+    "image": "/images/Field2-300x300.jpg",
+    "alignment": "right"
+  }
+]

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ContactForm from "./ContactForm"; 
 import CountdownTimer from "./CountdownTimer"
 
-function GeoCarousel() {
+const GeoCarousel = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [isTimerVisible, setIsTimerVisible] = useState(false);
 

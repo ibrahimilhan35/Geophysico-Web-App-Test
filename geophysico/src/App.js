@@ -11,7 +11,7 @@ const App = () => {
     <Router>
       <div>
         <Header />
-        <hr />
+        {/* <hr /> */}
         <div>
           <Routes>
             <Route path="/" element={<Main />} />
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
-        <hr />
+        {/* <hr /> */}
         {/* <Footer /> */}
       </div>
     </Router>

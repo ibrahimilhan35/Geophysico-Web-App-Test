@@ -1,4 +1,5 @@
-function ContactForm({ isVisible }) {
+const ContactForm = ({ isVisible }) => {
+    console.log("isVisible:", isVisible);
     const formStyle = isVisible ? {} : { display: "none" };
 
     return (
@@ -33,6 +34,7 @@ function ContactForm({ isVisible }) {
         </section>
       </div>
     );
-  }
+}
   
-  export default ContactForm;
+export default ContactForm;
+

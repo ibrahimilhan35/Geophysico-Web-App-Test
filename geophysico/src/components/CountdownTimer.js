@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function CountdownTimer() {
+const CountdownTimer = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
